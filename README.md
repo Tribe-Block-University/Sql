@@ -30,7 +30,7 @@ CREATE TABLE users (
     email VARCHAR(100) UNIQUE
 );
 ```
-## 3. CRUD Operations
+3. ## CRUD Operations
 ```sql
 INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
 ```

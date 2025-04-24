@@ -14,10 +14,10 @@ SQL (Structured Query Language) is used to manage and manipulate relational data
 
 ---
 
-## 1. Introduction to SQL  
+## Introduction to SQL  
 SQL is used to interact with databases like MySQL, PostgreSQL, SQLite, and SQL Server.
 
-## 2. Database & Tables  
+## Database & Tables  
 ### Creating a Database  
 ```sql
 CREATE DATABASE mydatabase;
@@ -30,7 +30,7 @@ CREATE TABLE users (
     email VARCHAR(100) UNIQUE
 );
 ```
-3. ## CRUD Operations
+## CRUD Operations
 ```sql
 INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
 ```
@@ -46,21 +46,21 @@ UPDATE users SET name = 'Jane Doe' WHERE id = 1;
 ```sql
 DELETE FROM users WHERE id = 1;
 ```
-## 4. Filtering with WHERE
+## Filtering with WHERE
 ```sql
 SELECT * FROM users WHERE email = 'john@example.com';
 ```
-## 5. Sorting and Aggregation
+## Sorting and Aggregation
 ```sql
 SELECT name, COUNT(*) FROM users GROUP BY name ORDER BY COUNT(*) DESC;
 ```
-## 6. Joins
+## Joins
 ```sql
 SELECT users.name, orders.amount 
 FROM users 
 JOIN orders ON users.id = orders.user_id;
 ```
-## 7. Indexes & Optimization
+## Indexes & Optimization
 ```sql
 CREATE INDEX idx_email ON users(email);
 ```
